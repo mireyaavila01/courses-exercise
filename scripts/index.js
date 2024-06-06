@@ -28,7 +28,8 @@ function getCourseInfo(){
 
             let cell4 = row.insertCell(3);
             let anchor = document.createElement("a")
-            anchor.href =`http://localhost:8081/details.html?courseid=${course.id}`;
+            anchor.href = `./details.html?courseid=${course.id}`;
+
             anchor.text = "Show Details"; 
             cell4.appendChild(anchor);
         });
